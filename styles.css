@@ -29,6 +29,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    margin-top: 20px;
 }
 
 h1 {
@@ -80,7 +81,19 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
     .container {
         padding: 10px;
     }

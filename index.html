@@ -7,28 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Calculadora de IMC</h1>
-    </header>
-    <main>
-        <section class="container">
-            <form id="imcForm">
-                <div class="form-group">
-                    <label for="weight">Peso (kg):</label>
-                    <input type="number" id="weight" name="weight" placeholder="Ex: 70" required>
-                </div>
-                <div class="form-group">
-                    <label for="height">Altura (m):</label>
-                    <input type="number" id="height" name="height" step="0.01" placeholder="Ex: 1.75" required>
-                </div>
-                <button type="submit">Calcular IMC</button>
-            </form>
-            <div id="result"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Calculadora de IMC. Todos os direitos reservados.</p>
-    </footer>
+        <form id="imcForm">
+            <div class="form-group">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" name="weight" placeholder="Ex: 70" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Altura (m):</label>
+                <input type="number" id="height" name="height" step="0.01" placeholder="Ex: 1.75" required>
+            </div>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
